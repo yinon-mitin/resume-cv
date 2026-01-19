@@ -17,6 +17,7 @@ DevOps engineer with hands-on experience in **Linux**, **containerization**, **n
 **Automation Engineer**
  : Padani Jewelers (e-com)
  : (2022-2026)
+
 - Drove the Magento -> Shopify **data migration** for 500+ SKUs by automating data processing and batch import workflows; reduced end-to-end catalog deployment time by **~60%**.
 - Built and maintained an automated Python-based **ETL pipeline** to extract, normalize and transform product data into Shopify-ready imports (Matrixify-compatible); reduced manual effort and import failures by improving data quality via schema validation.
 - Automated bulk asset collection via custom-built scrapper for product imagery collection from vendor/brand websites, enforcing naming rules and SKU-level mappings, and assembling packages for bulk upload.
