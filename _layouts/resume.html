@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Iconify для твоих <span class="iconify" ...> -->
+    <script defer src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+
+    <link rel="stylesheet" href="{{ "/assets/css/resume.css" | relative_url }}">
+  </head>
+
+  <body>
+    <main class="page">
+      {{ content }}
+      <div class="footer">
+        <a class="pdf" href="{{ "/resume.pdf" | relative_url }}">Download PDF</a>
+      </div>
+    </main>
+  </body>
+</html>
