@@ -1,6 +1,7 @@
-remote_theme: pages-themes/minimal@v0.2.0
+title: "Yinon Mitin — CV"
+theme: null
+markdown: kramdown
 
-plugins:
-- jekyll-remote-theme
-
-title: "Resume of Yinon Mitin"
+kramdown:
+  input: GFM
+  hard_wrap: false
