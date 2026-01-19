@@ -1,0 +1,109 @@
+:root{
+  --page-w: 900px;         /* экранная ширина "листа" */
+  --text: #111;
+  --muted: #444;
+  --rule: #222;
+  --bg: #f3f4f6;
+}
+
+* { box-sizing: border-box; }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.page{
+  max-width: var(--page-w);
+  margin: 28px auto;
+  padding: 34px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+/* Заголовок */
+h1{
+  margin: 0 0 10px 0;
+  font-size: 44px;
+  line-height: 1.05;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+h2{
+  margin: 18px 0 8px;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 800;
+}
+
+h2::after{
+  content: "";
+  display: block;
+  border-top: 2px solid var(--rule);
+  margin-top: 6px;
+}
+
+h3{
+  margin: 14px 0 6px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+p{ margin: 8px 0; color: var(--text); }
+a{ color: inherit; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.25); }
+a:hover{ border-bottom-color: rgba(0,0,0,.6); }
+
+ul{
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+}
+li{ margin: 6px 0; }
+
+hr{ border: 0; border-top: 2px solid var(--rule); margin: 16px 0; }
+
+/* Иконки */
+.iconify{
+  vertical-align: -0.15em;
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+/* Definition list (kramdown) для строк с ":" */
+dl{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: center;
+  margin: 6px 0 12px;
+  color: var(--muted);
+}
+dt{ display: none; }
+dd{ margin: 0; }
+
+/* Небольшой футер */
+.footer{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  opacity: .8;
+}
+.footer .pdf{
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+@media print{
+  body{ background:#fff; }
+  .page{
+    margin: 0;
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .footer{ display:none; }
+}
